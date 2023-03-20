@@ -99,6 +99,10 @@ let g:mucomplete#enable_auto_at_startup = 1
 cs add ~/work/gem5/cscope.out
 set tags=~/work/gem5/tags
 
+set relativenumber
 execute "highlight Pmenu ctermfg=gray guifg=gray"
 execute "highlight Comment guifg=#008700"
 execute "highlight linenr guifg=white"
+
+set foldmethod=indent       " automatically fold by indent level
+set nofoldenable            " ... but have folds open by default
